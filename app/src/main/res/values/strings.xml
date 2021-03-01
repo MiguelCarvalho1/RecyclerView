@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">RecyclerView</string>
     <string name="welcome">Welcome</string>
-    <string name="insert">Insert</string>
+    <string name="insert">Insert item</string>
 </resources>

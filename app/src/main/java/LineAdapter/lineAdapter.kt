@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerview.R
 import dataclasses.Place
 
- class LineAdapter (val list:ArrayList<Place>) : RecyclerView.Adapter<LineViewHolder>(){
+ class LineAdapter (val list:ArrayList<Place>) : RecyclerView.Adapter<LineAdapter.LineViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LineAdapter.LineViewHolder {
         val itemView = LayoutInflater
             .from(parent.context)
@@ -27,14 +27,15 @@ import dataclasses.Place
 
         holder.city.text = currentPlace.city
         holder.capital.text = currentPlace.capital
-        holder.habitantes.text = currentPlace.habitantes.toString()
+        holder.nhabitantes.text = currentPlace.habitantes.toString()
     }
 
+     class LineViewHolder (itemView: View)  : RecyclerView.ViewHolder(itemView) {
+         val city = itemView.city
+         val capital = itemView.capital
+         val nhabitantes = itemView.habitantes
 
-}
-class LineViewHolder(itemView: View)  : RecyclerView.ViewHolder(itemView){
-    val city = itemView.city
-    val capital = itemView.capital
-    val habitantes = itemView.habitantes
+     }
 
-}
+
+ }
