@@ -3,4 +3,7 @@
     <string name="app_name">RecyclerView</string>
     <string name="welcome">Bem-vindo</string>
     <string name="insert">Inserir item</string>
+    <string name="file">Ficheiro</string>
+    <string name="create_new">"Criar "</string>
+    <string name="open">Abrir</string>
 </resources>
