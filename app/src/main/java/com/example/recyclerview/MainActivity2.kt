@@ -7,7 +7,7 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import dataclasses.Place
 
-const val PARAM1 = "city"
+const val PARAM1_NAME = "city"
 
 class MainActivity2 : AppCompatActivity() {
     private lateinit var myList: ArrayList<Place>
